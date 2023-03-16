@@ -1,0 +1,8 @@
+name: 
+on: push
+jobs:
+  test_docker_is_exist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkou@v3
+      - run: docker --help
