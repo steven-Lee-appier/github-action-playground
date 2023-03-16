@@ -4,5 +4,5 @@ jobs:
   test_docker_is_exist:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v3
+      - uses: actions/checkout@v3
       - run: docker --help
