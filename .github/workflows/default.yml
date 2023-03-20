@@ -1,0 +1,10 @@
+name: afther merged
+on:
+  pull_request:
+    types:
+      - closed
+jobs:
+  some-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "afther merged"

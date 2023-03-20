@@ -1,0 +1,8 @@
+{
+  "name": "github-action-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/steven-Lee-appier/github-action-playground",
+  "author": "<steven.lee@appier.com>",
+  "license": "MIT"
+}
