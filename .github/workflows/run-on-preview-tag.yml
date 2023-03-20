@@ -2,7 +2,7 @@ name: "run on preview tag"
 on:
   push:
     tags:
-      - "preview-*"
+      - "preview-.*"
 jobs:
   test-echo:
     runs-on: ubuntu-latest
