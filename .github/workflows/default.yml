@@ -1,10 +1,7 @@
-name: afther merged
-on:
-  pull_request:
-    types:
-      - closed
+name: should run when push and afther merge to master
+on: push
 jobs:
   some-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "afther merged"
+      - run: echo "run"
