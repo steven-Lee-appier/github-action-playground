@@ -1,0 +1,12 @@
+name: "run on preview tag"
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "preview-*"
+jobs:
+  test-echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "test"
