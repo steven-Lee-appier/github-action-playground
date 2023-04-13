@@ -5,7 +5,6 @@ on:
     types:
       - completed
     branches:
-      - main
       - test
 jobs:
   test-echo:
