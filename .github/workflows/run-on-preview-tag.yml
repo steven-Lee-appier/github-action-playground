@@ -1,12 +1,17 @@
 name: "run on preview tag"
 on:
-  push:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [should run when push and afther merge to master]
+    types:
+      - completed
     branches:
-      - master
-    tags:
-      - "preview-*"
+      - test
 jobs:
   test-echo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "test"
+      - run: echo "preview"
+      - run: |
+         echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
+         echo "Tag name from github.ref_name: ${{  github.ref_name }}"
