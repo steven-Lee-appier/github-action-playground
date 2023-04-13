@@ -4,6 +4,8 @@ on:
     workflows: ["should run when push and afther merge to master"]
     types:
       - completed
+    branches:
+      - test
 jobs:
   test-echo:
     runs-on: ubuntu-latest
