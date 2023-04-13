@@ -1,6 +1,5 @@
 name: "run on preview tag"
 on:
-  workflow_dispatch:
   workflow_run:
     workflows: [should run when push and afther merge to master]
     types:
