@@ -1,7 +1,7 @@
 name: "run on preview tag"
 on:
   workflow_run:
-    workflows: ["should run when push and afther merge to master"]
+    workflows: [should run when push and afther merge to master]
     types:
       - completed
     branches:
