@@ -1,0 +1,14 @@
+name: build release image
+on:
+  push:
+    branches:
+      - "release"
+    tags:
+      - "rc-*"
+jobs:
+  basic-test:
+    uses: "./.github/workflow/reuse-basic-check.yml"
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build Image"

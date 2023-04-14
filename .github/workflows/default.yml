@@ -1,7 +1,5 @@
-name: should run when push and afther merge to master
+name: basic-workflow
 on: push
 jobs:
-  some-job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "run"
+    basic-test:
+      uses: "./.github/workflow/reuse-basic-check.yml"
