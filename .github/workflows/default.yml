@@ -1,5 +1,8 @@
-name: basic-workflow
-on: push
+name: basic test for develop branch
+on:
+  push:
+    branches-ignore:
+      - "release/**"
 jobs:
     basic-test:
-      uses: "./.github/workflow/reuse-basic-check.yml"
+      uses: "./.github/workflows/reuse-basic-check.yml"
