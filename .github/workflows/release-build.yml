@@ -2,7 +2,7 @@ name: build release image
 on:
   push:
     branches:
-      - "release"
+      - "release/**"
     tags:
       - "rc-*"
 jobs:
