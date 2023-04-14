@@ -10,5 +10,11 @@ jobs:
     uses: "./.github/workflows/reuse-basic-check.yml"
   build-image:
     runs-on: ubuntu-latest
+    needs: [basic-test]
     steps:
       - run: echo "Build Image"
+  tag-image-as-rc:
+    runs-on: ubuntu-latest
+    needs: [basic-test]
+    steps:
+      - run: echo "tag image"
