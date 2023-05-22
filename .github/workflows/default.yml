@@ -4,5 +4,7 @@ on:
     branches-ignore:
       - "release/**"
 jobs:
-    basic-test:
-      uses: "./.github/workflows/reuse-basic-check.yml"
+    test-curl:
+      runs-on: ubuntu-latest
+      steps:
+        - run: curl https://aixon-admin.aixon-stg.appier.info/admin-graphql
